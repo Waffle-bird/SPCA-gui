@@ -78,6 +78,15 @@
     <Compile Include="SearchAnimal.Designer.cs">
       <DependentUpon>SearchAnimal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddAnimal.resx">
+      <DependentUpon>AddAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalConsumption.resx">
+      <DependentUpon>AnimalConsumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalSummary.resx">
+      <DependentUpon>AnimalSummary.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchAnimal.resx">
+      <DependentUpon>SearchAnimal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

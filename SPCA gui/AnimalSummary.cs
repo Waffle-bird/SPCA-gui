@@ -16,5 +16,13 @@ namespace SPCA_gui
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home window = new Home();
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
     }
 }
