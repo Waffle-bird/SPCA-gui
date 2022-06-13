@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPCA gui", "SPCA gui\SPCA gui.csproj", "{93B03849-8954-43E9-9BDF-74BCF06E7012}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93B03849-8954-43E9-9BDF-74BCF06E7012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B03849-8954-43E9-9BDF-74BCF06E7012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B03849-8954-43E9-9BDF-74BCF06E7012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B03849-8954-43E9-9BDF-74BCF06E7012}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {065F8961-35FF-4734-A0F7-DD5529BCA157}
+	EndGlobalSection
+EndGlobal
