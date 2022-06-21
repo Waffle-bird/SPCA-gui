@@ -12,15 +12,17 @@ namespace SPCA_gui
 {
     public partial class AnimalSummary : Form
     {
-        public AnimalSummary()
+        AnimalManager am;
+        public AnimalSummary(AnimalManager am)
         {
+            this.am = am;
             InitializeComponent();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home window = new Home();
+            Home window = new Home(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

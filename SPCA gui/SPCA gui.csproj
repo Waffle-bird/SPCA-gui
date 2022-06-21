@@ -52,12 +52,14 @@
     <Compile Include="AddAnimal.Designer.cs">
       <DependentUpon>AddAnimal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Animal.cs" />
     <Compile Include="AnimalConsumption.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AnimalConsumption.Designer.cs">
       <DependentUpon>AnimalConsumption.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnimalManager.cs" />
     <Compile Include="AnimalSummary.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -12,15 +12,17 @@ namespace SPCA_gui
 {
     public partial class Home : Form
     {
-        public Home()
+        AnimalManager am;
+        public Home(AnimalManager am)
         {
+            this.am = am;
             InitializeComponent();
         }
 
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddAnimal window = new AddAnimal();
+            AddAnimal window = new AddAnimal(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -28,7 +30,7 @@ namespace SPCA_gui
         private void btnAnimalSummary_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AnimalSummary window = new AnimalSummary();
+            AnimalSummary window = new AnimalSummary(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -36,7 +38,7 @@ namespace SPCA_gui
         private void btnSearchAnimal_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SearchAnimal window = new SearchAnimal();
+            SearchAnimal window = new SearchAnimal(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -44,7 +46,7 @@ namespace SPCA_gui
         private void btnAddAnimalConsumption_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AnimalConsumption window = new AnimalConsumption();
+            AnimalConsumption window = new AnimalConsumption(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
