@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace SPCA_gui
 {
-    public partial class AnimalSummary : Form
+    public partial class frmAnimalSummary : Form
     {
         AnimalManager am;
-        public AnimalSummary(AnimalManager am)
+        public frmAnimalSummary(AnimalManager am)
         {
             this.am = am;
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace SPCA_gui
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home window = new Home(am);
+            frmHome window = new frmHome(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

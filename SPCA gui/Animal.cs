@@ -13,6 +13,7 @@ namespace SPCA_gui
         private int animalAge;
         private string species;
         private List<int> consumptions = new List<int>();
+        private int id;
 
         public Animal(string nme, int age, string spcs)
         {
@@ -38,6 +39,16 @@ namespace SPCA_gui
         public string GetSpecies()
         {
             return species;
+        }
+
+        public int GetId()
+        {
+            return id;
+        }
+
+        public void SetId(int id)
+        {
+            this.id = id;
         }
     }
 }

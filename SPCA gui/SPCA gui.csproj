@@ -53,12 +53,6 @@
       <DependentUpon>AddAnimal.cs</DependentUpon>
     </Compile>
     <Compile Include="Animal.cs" />
-    <Compile Include="AnimalConsumption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AnimalConsumption.Designer.cs">
-      <DependentUpon>AnimalConsumption.cs</DependentUpon>
-    </Compile>
     <Compile Include="AnimalManager.cs" />
     <Compile Include="AnimalSummary.cs">
       <SubType>Form</SubType>
@@ -74,17 +68,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchAnimal.cs">
+    <Compile Include="AnimalDatabase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SearchAnimal.Designer.cs">
-      <DependentUpon>SearchAnimal.cs</DependentUpon>
+    <Compile Include="AnimalDatabase.Designer.cs">
+      <DependentUpon>AnimalDatabase.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddAnimal.resx">
       <DependentUpon>AddAnimal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AnimalConsumption.resx">
-      <DependentUpon>AnimalConsumption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnimalSummary.resx">
       <DependentUpon>AnimalSummary.cs</DependentUpon>
@@ -101,8 +92,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SearchAnimal.resx">
-      <DependentUpon>SearchAnimal.cs</DependentUpon>
+    <EmbeddedResource Include="AnimalDatabase.resx">
+      <DependentUpon>AnimalDatabase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

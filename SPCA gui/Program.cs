@@ -17,7 +17,7 @@ namespace SPCA_gui
             AnimalManager am = new AnimalManager();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home(am));
+            Application.Run(new frmHome(am));
         }
     }
 }

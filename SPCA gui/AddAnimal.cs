@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace SPCA_gui
 {
-    public partial class AddAnimal : Form
+    public partial class frmAddAnimal : Form
     {
         private AnimalManager am;
-        public AddAnimal(AnimalManager am)
+        public frmAddAnimal(AnimalManager am)
         {
             this.am = am;
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace SPCA_gui
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home window = new Home(am);
+            frmHome window = new frmHome(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -37,5 +37,24 @@ namespace SPCA_gui
 
             MessageBox.Show("Animal Added Successfully");
         }
+
+        //private void frmAddAnimal_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    if (e.KeyChar == Convert.ToChar(Keys.Return))
+        //    {
+        //        MessageBox.Show("Key pressed");
+        //    }
+
+        //    if (e.KeyChar == (char)13)
+        //    {
+        //        am.AddOneAnimal(new Animal(tbxAddName.Text, Convert.ToInt32(nudAddAge.Value), cbxAddSpecies.Text));
+
+        //        tbxAddName.Text = "";
+        //        nudAddAge.Value = 0;
+        //        cbxAddSpecies.Text = "";
+
+        //        MessageBox.Show("Animal Added Successfully");
+        //    }
+        //}
     }
 }

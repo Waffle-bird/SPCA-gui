@@ -1,7 +1,7 @@
 ﻿
 namespace SPCA_gui
 {
-    partial class AddAnimal
+    partial class frmAddAnimal
     {
         /// <summary>
         /// Required designer variable.
@@ -115,8 +115,9 @@ namespace SPCA_gui
             this.btnAddAnimalEnter.UseVisualStyleBackColor = true;
             this.btnAddAnimalEnter.Click += new System.EventHandler(this.btnAddAnimalEnter_Click);
             // 
-            // AddAnimal
+            // frmAddAnimal
             // 
+            this.AcceptButton = this.btnAddAnimalEnter;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -128,7 +129,7 @@ namespace SPCA_gui
             this.Controls.Add(this.lblAddName);
             this.Controls.Add(this.tbxAddName);
             this.Controls.Add(this.btnBack);
-            this.Name = "AddAnimal";
+            this.Name = "frmAddAnimal";
             this.Text = "AddAnimal";
             ((System.ComponentModel.ISupportInitialize)(this.nudAddAge)).EndInit();
             this.ResumeLayout(false);

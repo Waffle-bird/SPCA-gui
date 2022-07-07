@@ -1,7 +1,7 @@
 ﻿
 namespace SPCA_gui
 {
-    partial class Home
+    partial class frmHome
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,7 @@ namespace SPCA_gui
         private void InitializeComponent()
         {
             this.btnAddAnimal = new System.Windows.Forms.Button();
-            this.btnSearchAnimal = new System.Windows.Forms.Button();
-            this.btnAddAnimalConsumption = new System.Windows.Forms.Button();
+            this.btnAnimalDatabase = new System.Windows.Forms.Button();
             this.btnAnimalSummary = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,29 +44,19 @@ namespace SPCA_gui
             this.btnAddAnimal.UseVisualStyleBackColor = true;
             this.btnAddAnimal.Click += new System.EventHandler(this.btnAddAnimal_Click);
             // 
-            // btnSearchAnimal
+            // btnAnimalDatabase
             // 
-            this.btnSearchAnimal.Location = new System.Drawing.Point(167, 360);
-            this.btnSearchAnimal.Name = "btnSearchAnimal";
-            this.btnSearchAnimal.Size = new System.Drawing.Size(149, 78);
-            this.btnSearchAnimal.TabIndex = 1;
-            this.btnSearchAnimal.Text = "Search Animal";
-            this.btnSearchAnimal.UseVisualStyleBackColor = true;
-            this.btnSearchAnimal.Click += new System.EventHandler(this.btnSearchAnimal_Click);
-            // 
-            // btnAddAnimalConsumption
-            // 
-            this.btnAddAnimalConsumption.Location = new System.Drawing.Point(322, 360);
-            this.btnAddAnimalConsumption.Name = "btnAddAnimalConsumption";
-            this.btnAddAnimalConsumption.Size = new System.Drawing.Size(149, 78);
-            this.btnAddAnimalConsumption.TabIndex = 2;
-            this.btnAddAnimalConsumption.Text = "Add Consumption";
-            this.btnAddAnimalConsumption.UseVisualStyleBackColor = true;
-            this.btnAddAnimalConsumption.Click += new System.EventHandler(this.btnAddAnimalConsumption_Click);
+            this.btnAnimalDatabase.Location = new System.Drawing.Point(167, 360);
+            this.btnAnimalDatabase.Name = "btnAnimalDatabase";
+            this.btnAnimalDatabase.Size = new System.Drawing.Size(149, 78);
+            this.btnAnimalDatabase.TabIndex = 1;
+            this.btnAnimalDatabase.Text = "Animal Database";
+            this.btnAnimalDatabase.UseVisualStyleBackColor = true;
+            this.btnAnimalDatabase.Click += new System.EventHandler(this.btnSearchAnimal_Click);
             // 
             // btnAnimalSummary
             // 
-            this.btnAnimalSummary.Location = new System.Drawing.Point(477, 360);
+            this.btnAnimalSummary.Location = new System.Drawing.Point(322, 360);
             this.btnAnimalSummary.Name = "btnAnimalSummary";
             this.btnAnimalSummary.Size = new System.Drawing.Size(149, 78);
             this.btnAnimalSummary.TabIndex = 3;
@@ -75,16 +64,15 @@ namespace SPCA_gui
             this.btnAnimalSummary.UseVisualStyleBackColor = true;
             this.btnAnimalSummary.Click += new System.EventHandler(this.btnAnimalSummary_Click);
             // 
-            // Home
+            // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 450);
             this.Controls.Add(this.btnAnimalSummary);
-            this.Controls.Add(this.btnAddAnimalConsumption);
-            this.Controls.Add(this.btnSearchAnimal);
+            this.Controls.Add(this.btnAnimalDatabase);
             this.Controls.Add(this.btnAddAnimal);
-            this.Name = "Home";
+            this.Name = "frmHome";
             this.Text = "Home";
             this.ResumeLayout(false);
 
@@ -93,8 +81,7 @@ namespace SPCA_gui
         #endregion
 
         private System.Windows.Forms.Button btnAddAnimal;
-        private System.Windows.Forms.Button btnSearchAnimal;
-        private System.Windows.Forms.Button btnAddAnimalConsumption;
+        private System.Windows.Forms.Button btnAnimalDatabase;
         private System.Windows.Forms.Button btnAnimalSummary;
     }
 }

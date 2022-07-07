@@ -1,7 +1,7 @@
 ﻿
 namespace SPCA_gui
 {
-    partial class AnimalSummary
+    partial class frmAnimalSummary
     {
         /// <summary>
         /// Required designer variable.
@@ -42,13 +42,13 @@ namespace SPCA_gui
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // AnimalSummary
+            // frmAnimalSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnBack);
-            this.Name = "AnimalSummary";
+            this.Name = "frmAnimalSummary";
             this.Text = "AnimalSummary";
             this.ResumeLayout(false);
 

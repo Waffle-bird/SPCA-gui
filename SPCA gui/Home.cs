@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace SPCA_gui
 {
-    public partial class Home : Form
+    public partial class frmHome : Form
     {
         AnimalManager am;
-        public Home(AnimalManager am)
+        public frmHome(AnimalManager am)
         {
             this.am = am;
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace SPCA_gui
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddAnimal window = new AddAnimal(am);
+            frmAddAnimal window = new frmAddAnimal(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -30,7 +30,7 @@ namespace SPCA_gui
         private void btnAnimalSummary_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AnimalSummary window = new AnimalSummary(am);
+            frmAnimalSummary window = new frmAnimalSummary(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -38,15 +38,7 @@ namespace SPCA_gui
         private void btnSearchAnimal_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SearchAnimal window = new SearchAnimal(am);
-            window.FormClosed += (s, args) => this.Close();
-            window.Show();
-        }
-
-        private void btnAddAnimalConsumption_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AnimalConsumption window = new AnimalConsumption(am);
+            frmAnimalDatabase window = new frmAnimalDatabase(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
