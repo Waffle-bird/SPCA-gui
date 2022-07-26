@@ -74,6 +74,7 @@ namespace SPCA_gui
             this.lsvAnimalList.Size = new System.Drawing.Size(397, 270);
             this.lsvAnimalList.TabIndex = 4;
             this.lsvAnimalList.UseCompatibleStateImageBehavior = false;
+            this.lsvAnimalList.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lsvAnimalList_ItemSelectionChanged);
             this.lsvAnimalList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lsvAnimalList_MouseClick);
             // 
             // frmAnimalDatabase

@@ -72,9 +72,41 @@ namespace SPCA_gui
 
         private void lsvAnimalList_MouseClick(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("TEST");
+            selectedId = Convert.ToInt32(lsvAnimalList.SelectedItems[0].Text);
+
+            if (selectedId == -1)
+            {
+                MessageBox.Show("Error: Please select a valid animal");
+            }
+
+            btnAddConsumption.Enabled = CheckAnimalListSelect();
         }
 
+        private bool CheckAnimalListSelect()
+        {
+            if (lsvAnimalList.SelectedItems.Count == 0)
+            {
+                //this code will disable the button if it has any selection
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
+        private void lsvAnimalList_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+            if (CheckAnimalListSelect())
+            {
+                btnAddConsumption.Enabled = true;
+                btnAnimalSummary.Enabled = true;
+            }
+            else
+            {
+                btnAddConsumption.Enabled = false;
+                btnAnimalSummary.Enabled = false;
+            }
+        }
     }
 }
