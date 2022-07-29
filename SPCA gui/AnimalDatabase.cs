@@ -52,6 +52,11 @@ namespace SPCA_gui
             PopulateListView(dv);
         }
 
+        private int GetSelectedId()
+        {
+            return selectedId;
+        }
+
         private void PopulateListView(DataView dv)
         {
             lsvAnimalList.Items.Clear();
@@ -78,15 +83,13 @@ namespace SPCA_gui
             {
                 MessageBox.Show("Error: Please select a valid animal");
             }
-
-            btnAddConsumption.Enabled = CheckAnimalListSelect();
         }
 
         private bool CheckAnimalListSelect()
         {
             if (lsvAnimalList.SelectedItems.Count == 0)
             {
-                //this code will disable the button if it has any selection
+                //this will disable the button if it has no selection
                 return false;
             }
             else
@@ -107,6 +110,14 @@ namespace SPCA_gui
                 btnAddConsumption.Enabled = false;
                 btnAnimalSummary.Enabled = false;
             }
+        }
+
+        private void btnAddConsumption_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAnimalConsumption window = new frmAnimalConsumption (am, selectedId);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
     }
 }

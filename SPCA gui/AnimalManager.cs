@@ -21,6 +21,32 @@ namespace SPCA_gui
             return animals;
         }
 
+        public int FindAnimal(int id)
+        {
+            int index = 0;
+            foreach (Animal animal in animals)
+            {
+                if (animal.GetId() == id)
+                {
+                    return index;
+                }
+
+                index++;
+            }
+
+            return -1;
+        }
+
+        public void AddConsumption(int id, DateTime date, int consumption)
+        {
+            int animalIndex = FindAnimal(id);
+
+            if (animalIndex > -1)
+            {
+                animals[animalIndex].AddConsumption(date, consumption);
+            }
+        }
+
         public void AddOneAnimal(Animal newAnimal)
         {
             animals.Add(newAnimal);

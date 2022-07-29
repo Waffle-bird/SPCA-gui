@@ -120,7 +120,7 @@ namespace SPCA_gui
             this.AcceptButton = this.btnAddAnimalEnter;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(279, 253);
             this.Controls.Add(this.btnAddAnimalEnter);
             this.Controls.Add(this.lblAddAge);
             this.Controls.Add(this.nudAddAge);

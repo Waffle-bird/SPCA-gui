@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SPCA_gui
 {
@@ -12,7 +13,7 @@ namespace SPCA_gui
         private string name;
         private int animalAge;
         private string species;
-        private List<int> consumptions = new List<int>();
+        private Dictionary<DateTime, int> consumptions = new Dictionary<DateTime, int>();
         private int id;
 
         public Animal(string nme, int age, string spcs)
@@ -23,7 +24,7 @@ namespace SPCA_gui
         }
 
 
-        public List<int> GetConsumptions()
+        public Dictionary<DateTime,int> GetConsumptions()
         {
             return consumptions;
         }
@@ -50,5 +51,13 @@ namespace SPCA_gui
         {
             this.id = id;
         }
+
+        public void AddConsumption(DateTime date, int consumption)
+        {
+            this.consumptions.Add(date, consumption);
+
+            MessageBox.Show(consumptions.Count+"");
+        }
+
     }
 }

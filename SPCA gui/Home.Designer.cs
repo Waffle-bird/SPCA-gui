@@ -68,7 +68,7 @@ namespace SPCA_gui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 450);
+            this.ClientSize = new System.Drawing.Size(481, 450);
             this.Controls.Add(this.btnAnimalSummary);
             this.Controls.Add(this.btnAnimalDatabase);
             this.Controls.Add(this.btnAddAnimal);

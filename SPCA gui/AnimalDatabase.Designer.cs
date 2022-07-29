@@ -54,6 +54,7 @@ namespace SPCA_gui
             this.btnAddConsumption.TabIndex = 2;
             this.btnAddConsumption.Text = "Add Consumpion";
             this.btnAddConsumption.UseVisualStyleBackColor = true;
+            this.btnAddConsumption.Click += new System.EventHandler(this.btnAddConsumption_Click);
             // 
             // btnAnimalSummary
             // 
@@ -81,7 +82,7 @@ namespace SPCA_gui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(733, 376);
+            this.ClientSize = new System.Drawing.Size(427, 376);
             this.Controls.Add(this.lsvAnimalList);
             this.Controls.Add(this.btnAnimalSummary);
             this.Controls.Add(this.btnAddConsumption);
