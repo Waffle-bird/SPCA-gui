@@ -119,5 +119,13 @@ namespace SPCA_gui
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
+
+        private void btnAnimalSummary_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAnimalSummary window = new frmAnimalSummary(am, selectedId);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
     }
 }

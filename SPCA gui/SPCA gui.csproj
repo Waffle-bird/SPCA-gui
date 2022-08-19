@@ -66,6 +66,12 @@
     <Compile Include="AnimalSummary.Designer.cs">
       <DependentUpon>AnimalSummary.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCostSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostSummary.Designer.cs">
+      <DependentUpon>frmCostSummary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>

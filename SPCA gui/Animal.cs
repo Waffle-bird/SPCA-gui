@@ -58,6 +58,17 @@ namespace SPCA_gui
 
             MessageBox.Show(consumptions.Count+"");
         }
+        
+        public int TotalConsumptions()
+        {
+            int totalConsumption = 0;
 
+            foreach (KeyValuePair<DateTime, int> consumption in consumptions)
+            {
+                totalConsumption += consumption.Value;
+            }
+
+            return totalConsumption;
+        }
     }
 }

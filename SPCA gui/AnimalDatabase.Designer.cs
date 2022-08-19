@@ -65,6 +65,7 @@ namespace SPCA_gui
             this.btnAnimalSummary.TabIndex = 3;
             this.btnAnimalSummary.Text = "Summary";
             this.btnAnimalSummary.UseVisualStyleBackColor = true;
+            this.btnAnimalSummary.Click += new System.EventHandler(this.btnAnimalSummary_Click);
             // 
             // lsvAnimalList
             // 

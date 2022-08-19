@@ -37,6 +37,13 @@ namespace SPCA_gui
             return -1;
         }
 
+        public string AnimalSummary(int id)
+        {
+            string Summary = $"{animals[FindAnimal(id)].TotalConsumptions()}";
+
+            return Summary;
+        }
+
         public void AddConsumption(int id, DateTime date, int consumption)
         {
             int animalIndex = FindAnimal(id);

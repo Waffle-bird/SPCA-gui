@@ -27,10 +27,10 @@ namespace SPCA_gui
             window.Show();
         }
 
-        private void btnAnimalSummary_Click(object sender, EventArgs e)
+        private void btnCostSummary_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmAnimalSummary window = new frmAnimalSummary(am);
+            frmCostSummary window = new frmCostSummary(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

@@ -13,18 +13,23 @@ namespace SPCA_gui
     public partial class frmAnimalSummary : Form
     {
         AnimalManager am;
-        public frmAnimalSummary(AnimalManager am)
+        int selectedId;
+        public frmAnimalSummary(AnimalManager am, int selectedId)
         {
             this.am = am;
+            this.selectedId = selectedId;
             InitializeComponent();
+
+            rtbSummaryOutput.Text = am.AnimalSummary(selectedId);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmHome window = new frmHome(am);
+            frmAnimalDatabase window = new frmAnimalDatabase(am);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
+
     }
 }

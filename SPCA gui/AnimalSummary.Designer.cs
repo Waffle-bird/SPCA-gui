@@ -30,6 +30,7 @@ namespace SPCA_gui
         private void InitializeComponent()
         {
             this.btnBack = new System.Windows.Forms.Button();
+            this.rtbSummaryOutput = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnBack
@@ -42,11 +43,20 @@ namespace SPCA_gui
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // rtbSummaryOutput
+            // 
+            this.rtbSummaryOutput.Location = new System.Drawing.Point(12, 41);
+            this.rtbSummaryOutput.Name = "rtbSummaryOutput";
+            this.rtbSummaryOutput.Size = new System.Drawing.Size(361, 332);
+            this.rtbSummaryOutput.TabIndex = 1;
+            this.rtbSummaryOutput.Text = "";
+            // 
             // frmAnimalSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rtbSummaryOutput);
             this.Controls.Add(this.btnBack);
             this.Name = "frmAnimalSummary";
             this.Text = "AnimalSummary";
@@ -57,5 +67,6 @@ namespace SPCA_gui
         #endregion
 
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.RichTextBox rtbSummaryOutput;
     }
 }
