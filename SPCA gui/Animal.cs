@@ -53,7 +53,7 @@ namespace SPCA_gui
         }
 
         public void AddConsumption(DateTime date, int consumption)
-        {
+        {           
             this.consumptions.Add(date, consumption);
 
             MessageBox.Show(consumptions.Count+"");

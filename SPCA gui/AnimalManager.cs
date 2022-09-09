@@ -39,9 +39,34 @@ namespace SPCA_gui
 
         public string AnimalSummary(int id)
         {
-            string Summary = $"{animals[FindAnimal(id)].TotalConsumptions()}";
+            string Summary = $"Total consumption weight to date: {animals[FindAnimal(id)].TotalConsumptions()}g\n";
 
             return Summary;
+        }
+
+        public string AllAnimalsCostSummary()
+        {
+            string Summary = $"Total Food Cost: ${AllAnimalsCostTotal()}";
+
+            return Summary;
+        }
+
+        public float AllAnimalsCostTotal()
+        {
+            float totalCost = 0;
+            const float FOODCOST = 0.063f;
+
+            foreach (Animal animal in animals)
+            {
+                foreach (KeyValuePair<DateTime, int> consumption in animal.GetConsumptions())
+                {
+                    totalCost += consumption.Value*FOODCOST;
+                }
+            }
+
+            totalCost = (float)Math.Round(totalCost, 2);
+
+            return totalCost;
         }
 
         public void AddConsumption(int id, DateTime date, int consumption)

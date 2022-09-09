@@ -17,6 +17,19 @@ namespace SPCA_gui
         {
             this.am = am;
             InitializeComponent();
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHome window = new frmHome(am);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
+        private void frmCostSummary_Load(object sender, EventArgs e)
+        {
+            rtbCostOutput.Text = $"{am.AllAnimalsCostSummary()}";
         }
     }
 }
