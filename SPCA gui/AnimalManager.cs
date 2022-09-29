@@ -21,6 +21,7 @@ namespace SPCA_gui
             return animals;
         }
 
+        //when method is called, it searches through the animals list comparing the animal's ID against the wanted ID
         public int FindAnimal(int id)
         {
             int index = 0;
@@ -51,6 +52,7 @@ namespace SPCA_gui
             return Summary;
         }
 
+        //calculation of foodcost. Constatant variable FOODCOST is the cost per gram. FOODCOST is then multiplied by the value of every consumption value
         public float AllAnimalsCostTotal()
         {
             float totalCost = 0;
@@ -79,6 +81,7 @@ namespace SPCA_gui
             }
         }
 
+        // adds an animal to the animals list. give the newly added animal a unique ID
         public void AddOneAnimal(Animal newAnimal)
         {
             animals.Add(newAnimal);

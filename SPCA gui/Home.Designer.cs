@@ -32,6 +32,7 @@ namespace SPCA_gui
             this.btnAddAnimal = new System.Windows.Forms.Button();
             this.btnAnimalDatabase = new System.Windows.Forms.Button();
             this.btnCostSummary = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAddAnimal
@@ -76,18 +77,31 @@ namespace SPCA_gui
             this.btnCostSummary.UseVisualStyleBackColor = false;
             this.btnCostSummary.Click += new System.EventHandler(this.btnCostSummary_Click);
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(2, 47);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(482, 55);
+            this.lblTitle.TabIndex = 4;
+            this.lblTitle.Text = "SPCA Food Manager";
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(183)))), ((int)(((byte)(167)))));
             this.ClientSize = new System.Drawing.Size(481, 450);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnCostSummary);
             this.Controls.Add(this.btnAnimalDatabase);
             this.Controls.Add(this.btnAddAnimal);
             this.Name = "frmHome";
             this.Text = "Home";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +110,7 @@ namespace SPCA_gui
         private System.Windows.Forms.Button btnAddAnimal;
         private System.Windows.Forms.Button btnAnimalDatabase;
         private System.Windows.Forms.Button btnCostSummary;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
 
