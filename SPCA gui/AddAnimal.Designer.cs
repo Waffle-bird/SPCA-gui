@@ -52,7 +52,7 @@ namespace SPCA_gui
             // 
             // tbxAddName
             // 
-            this.tbxAddName.Location = new System.Drawing.Point(102, 37);
+            this.tbxAddName.Location = new System.Drawing.Point(105, 47);
             this.tbxAddName.Name = "tbxAddName";
             this.tbxAddName.Size = new System.Drawing.Size(146, 20);
             this.tbxAddName.TabIndex = 1;
@@ -60,7 +60,7 @@ namespace SPCA_gui
             // lblAddName
             // 
             this.lblAddName.AutoSize = true;
-            this.lblAddName.Location = new System.Drawing.Point(12, 44);
+            this.lblAddName.Location = new System.Drawing.Point(15, 50);
             this.lblAddName.Name = "lblAddName";
             this.lblAddName.Size = new System.Drawing.Size(66, 13);
             this.lblAddName.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace SPCA_gui
             "Rabbit",
             "Guinea Pig",
             "Chicken"});
-            this.cbxAddSpecies.Location = new System.Drawing.Point(102, 110);
+            this.cbxAddSpecies.Location = new System.Drawing.Point(105, 116);
             this.cbxAddSpecies.Name = "cbxAddSpecies";
             this.cbxAddSpecies.Size = new System.Drawing.Size(146, 21);
             this.cbxAddSpecies.TabIndex = 3;
@@ -83,7 +83,7 @@ namespace SPCA_gui
             // lblAddSpecies
             // 
             this.lblAddSpecies.AutoSize = true;
-            this.lblAddSpecies.Location = new System.Drawing.Point(9, 113);
+            this.lblAddSpecies.Location = new System.Drawing.Point(12, 119);
             this.lblAddSpecies.Name = "lblAddSpecies";
             this.lblAddSpecies.Size = new System.Drawing.Size(81, 13);
             this.lblAddSpecies.TabIndex = 4;
@@ -91,7 +91,7 @@ namespace SPCA_gui
             // 
             // nudAddAge
             // 
-            this.nudAddAge.Location = new System.Drawing.Point(102, 76);
+            this.nudAddAge.Location = new System.Drawing.Point(105, 82);
             this.nudAddAge.Name = "nudAddAge";
             this.nudAddAge.Size = new System.Drawing.Size(146, 20);
             this.nudAddAge.TabIndex = 5;
@@ -99,7 +99,7 @@ namespace SPCA_gui
             // lblAddAge
             // 
             this.lblAddAge.AutoSize = true;
-            this.lblAddAge.Location = new System.Drawing.Point(12, 78);
+            this.lblAddAge.Location = new System.Drawing.Point(15, 84);
             this.lblAddAge.Name = "lblAddAge";
             this.lblAddAge.Size = new System.Drawing.Size(57, 13);
             this.lblAddAge.TabIndex = 6;
@@ -107,9 +107,9 @@ namespace SPCA_gui
             // 
             // btnAddAnimalEnter
             // 
-            this.btnAddAnimalEnter.Location = new System.Drawing.Point(12, 152);
+            this.btnAddAnimalEnter.Location = new System.Drawing.Point(12, 148);
             this.btnAddAnimalEnter.Name = "btnAddAnimalEnter";
-            this.btnAddAnimalEnter.Size = new System.Drawing.Size(236, 87);
+            this.btnAddAnimalEnter.Size = new System.Drawing.Size(75, 23);
             this.btnAddAnimalEnter.TabIndex = 7;
             this.btnAddAnimalEnter.Text = "Enter";
             this.btnAddAnimalEnter.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@ namespace SPCA_gui
             this.AcceptButton = this.btnAddAnimalEnter;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 253);
+            this.ClientSize = new System.Drawing.Size(279, 193);
             this.Controls.Add(this.btnAddAnimalEnter);
             this.Controls.Add(this.lblAddAge);
             this.Controls.Add(this.nudAddAge);

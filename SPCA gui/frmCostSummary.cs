@@ -13,6 +13,7 @@ namespace SPCA_gui
     public partial class frmCostSummary : Form
     {
         AnimalManager am;
+        //constructor
         public frmCostSummary(AnimalManager am)
         {
             this.am = am;
@@ -20,6 +21,7 @@ namespace SPCA_gui
 
         }
 
+        //methods
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();

@@ -13,12 +13,14 @@ namespace SPCA_gui
     public partial class frmAddAnimal : Form
     {
         private AnimalManager am;
+        //constructor
         public frmAddAnimal(AnimalManager am)
         {
             this.am = am;
             InitializeComponent();
         }
 
+        //methods
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,8 +29,21 @@ namespace SPCA_gui
             window.Show();
         }
 
+        private string CheckSpecies()
+        {
+            string ERROR = "Please enter a valid species";
+            if (cbxAddSpecies.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show(ERROR);
+            }
+            
+            return cbxAddSpecies.Text;           
+        }
+
         private void btnAddAnimalEnter_Click(object sender, EventArgs e)
         {
+            CheckSpecies();
+
             am.AddOneAnimal(new Animal(tbxAddName.Text, Convert.ToInt32(nudAddAge.Value),cbxAddSpecies.Text));
 
             tbxAddName.Text = "";
@@ -38,25 +53,5 @@ namespace SPCA_gui
             MessageBox.Show("Animal Added Successfully");
         }
         
-        
-
-        //private void frmAddAnimal_KeyPress(object sender, KeyPressEventArgs e)
-        //{
-        //    if (e.KeyChar == Convert.ToChar(Keys.Return))
-        //    {
-        //        MessageBox.Show("Key pressed");
-        //    }
-
-        //    if (e.KeyChar == (char)13)
-        //    {
-        //        am.AddOneAnimal(new Animal(tbxAddName.Text, Convert.ToInt32(nudAddAge.Value), cbxAddSpecies.Text));
-
-        //        tbxAddName.Text = "";
-        //        nudAddAge.Value = 0;
-        //        cbxAddSpecies.Text = "";
-
-        //        MessageBox.Show("Animal Added Successfully");
-        //    }
-        //}
     }
 }

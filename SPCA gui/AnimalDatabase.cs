@@ -17,6 +17,7 @@ namespace SPCA_gui
         private DataView dv;
         int selectedId = -1;
 
+        //constructor
         public frmAnimalDatabase(AnimalManager am)
         {
             this.am = am;
@@ -52,6 +53,7 @@ namespace SPCA_gui
             PopulateListView(dv);
         }
 
+        //methods
         private int GetSelectedId()
         {
             return selectedId;

@@ -13,12 +13,14 @@ namespace SPCA_gui
     public partial class frmHome : Form
     {
         AnimalManager am;
+        //constructor
         public frmHome(AnimalManager am)
         {
             this.am = am;
             InitializeComponent();
         }
 
+        //methods
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
             this.Hide();
