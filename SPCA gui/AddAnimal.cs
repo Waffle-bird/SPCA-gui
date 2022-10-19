@@ -29,29 +29,32 @@ namespace SPCA_gui
             window.Show();
         }
 
-        private string CheckSpecies()
+        private bool CheckSpecies()
         {
             string ERROR = "Please enter a valid species";
-            if (cbxAddSpecies.Text.Any(char.IsDigit))
+            if (cbxAddSpecies.Text.All(char.IsLetter))
             {
-                MessageBox.Show(ERROR);
+                return true;
             }
-            
-            return cbxAddSpecies.Text;           
+
+            else 
+            MessageBox.Show(ERROR);
+            cbxAddSpecies.Text = "";
+            return false;
         }
 
         private void btnAddAnimalEnter_Click(object sender, EventArgs e)
         {
-            CheckSpecies();
+            if (CheckSpecies() == true)
+            {
+                am.AddOneAnimal(new Animal(tbxAddName.Text, Convert.ToInt32(nudAddAge.Value), cbxAddSpecies.Text));
 
-            am.AddOneAnimal(new Animal(tbxAddName.Text, Convert.ToInt32(nudAddAge.Value),cbxAddSpecies.Text));
+                tbxAddName.Text = "";
+                nudAddAge.Value = 0;
+                cbxAddSpecies.Text = "";
 
-            tbxAddName.Text = "";
-            nudAddAge.Value = 0;
-            cbxAddSpecies.Text = "";
-
-            MessageBox.Show("Animal Added Successfully");
-        }
-        
+                MessageBox.Show("Animal Added Successfully");
+            }
+        }        
     }
 }
