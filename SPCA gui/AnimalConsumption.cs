@@ -34,5 +34,6 @@ namespace SPCA_gui
         {
             am.AddConsumption(selectedId, dtpConsumptionDate.Value,(int)nudConsumptionWeight.Value);
         }
+
     }
 }

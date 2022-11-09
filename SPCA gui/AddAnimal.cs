@@ -31,6 +31,7 @@ namespace SPCA_gui
 
         private bool CheckSpecies()
         {
+            //checks if input is a letter. if it is not a letter, and ERROR message box appears prompting user to enter a valid species
             string ERROR = "Please enter a valid species";
             if (cbxAddSpecies.Text.All(char.IsLetter))
             {
@@ -45,6 +46,7 @@ namespace SPCA_gui
 
         private void btnAddAnimalEnter_Click(object sender, EventArgs e)
         {
+            //checks input against CheckSpecies method, if it is Letters only, animal is entered in to system. if not, an error occurs. 
             if (CheckSpecies() == true)
             {
                 am.AddOneAnimal(new Animal(tbxAddName.Text, Convert.ToInt32(nudAddAge.Value), cbxAddSpecies.Text));

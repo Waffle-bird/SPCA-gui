@@ -34,12 +34,13 @@ namespace SPCA_gui
             this.btnConsumptionBack = new System.Windows.Forms.Button();
             this.nudConsumptionWeight = new System.Windows.Forms.NumericUpDown();
             this.lblConsumptionWeight = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudConsumptionWeight)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConsumptionEnter
             // 
-            this.btnConsumptionEnter.Location = new System.Drawing.Point(12, 415);
+            this.btnConsumptionEnter.Location = new System.Drawing.Point(12, 122);
             this.btnConsumptionEnter.Name = "btnConsumptionEnter";
             this.btnConsumptionEnter.Size = new System.Drawing.Size(75, 23);
             this.btnConsumptionEnter.TabIndex = 0;
@@ -49,7 +50,7 @@ namespace SPCA_gui
             // 
             // dtpConsumptionDate
             // 
-            this.dtpConsumptionDate.Location = new System.Drawing.Point(12, 75);
+            this.dtpConsumptionDate.Location = new System.Drawing.Point(48, 47);
             this.dtpConsumptionDate.Name = "dtpConsumptionDate";
             this.dtpConsumptionDate.Size = new System.Drawing.Size(200, 20);
             this.dtpConsumptionDate.TabIndex = 1;
@@ -66,25 +67,35 @@ namespace SPCA_gui
             // 
             // nudConsumptionWeight
             // 
-            this.nudConsumptionWeight.Location = new System.Drawing.Point(64, 101);
+            this.nudConsumptionWeight.Location = new System.Drawing.Point(64, 83);
             this.nudConsumptionWeight.Name = "nudConsumptionWeight";
-            this.nudConsumptionWeight.Size = new System.Drawing.Size(148, 20);
+            this.nudConsumptionWeight.Size = new System.Drawing.Size(184, 20);
             this.nudConsumptionWeight.TabIndex = 3;
             // 
             // lblConsumptionWeight
             // 
             this.lblConsumptionWeight.AutoSize = true;
-            this.lblConsumptionWeight.Location = new System.Drawing.Point(12, 103);
+            this.lblConsumptionWeight.Location = new System.Drawing.Point(12, 85);
             this.lblConsumptionWeight.Name = "lblConsumptionWeight";
             this.lblConsumptionWeight.Size = new System.Drawing.Size(46, 13);
             this.lblConsumptionWeight.TabIndex = 4;
             this.lblConsumptionWeight.Text = "Food (g)";
             // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(12, 47);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(30, 13);
+            this.lblDate.TabIndex = 5;
+            this.lblDate.Text = "Date";
+            // 
             // frmAnimalConsumption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(277, 160);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblConsumptionWeight);
             this.Controls.Add(this.nudConsumptionWeight);
             this.Controls.Add(this.btnConsumptionBack);
@@ -105,5 +116,6 @@ namespace SPCA_gui
         private System.Windows.Forms.Button btnConsumptionBack;
         private System.Windows.Forms.NumericUpDown nudConsumptionWeight;
         private System.Windows.Forms.Label lblConsumptionWeight;
+        private System.Windows.Forms.Label lblDate;
     }
 }

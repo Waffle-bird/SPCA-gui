@@ -56,7 +56,7 @@ namespace SPCA_gui
         {           
             this.consumptions.Add(date, consumption);
 
-            MessageBox.Show(consumptions.Count+"");
+            MessageBox.Show($"This animal has {consumptions.Count} recorded consumption(s)");
         }
         
         public int TotalConsumptions()
